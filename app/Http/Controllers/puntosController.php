@@ -77,7 +77,15 @@ class puntosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+       $punto = puntos::find($id);
+       $punto->update([
+        'NameLocal'=>$request->input('NameLocal'),
+        'Description'=>$request->input('Description'),
+        'Longitud'=>$request->input('Longitud'),
+        'Latitud'=>$request->input('Latitud'),
+        'Type'=>$request->input('Type'),
+        'User'=>$request->input('User')
+       ]);
     }
 
     /**
