@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamps();
             $table->string('NameLocal');
             $table->Text('Description');
-            $table->string('Longitud');
-            $table->string('Latitud');
+            $table->decimal('Longitud');
+            $table->decimal('Latitud');
             $table->integer('Type');
             $table->string('User');
         });
