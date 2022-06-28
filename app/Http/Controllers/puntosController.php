@@ -54,7 +54,7 @@ class puntosController extends Controller
      */
     public function show($id)
     {
-        //
+        return puntos::find($id);
     }
 
     /**
