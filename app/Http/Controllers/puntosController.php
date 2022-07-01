@@ -42,6 +42,8 @@ class puntosController extends Controller
       $NewPunto->Latitud = $request->input('Latitud');
       $NewPunto->Type = $request->input('Type');
       $NewPunto->User = $request->input('User');
+      $paths = $request->image->store('img/puntos');
+      $NewPunto->imagen = $paths;
       $NewPunto->save();
       
     }

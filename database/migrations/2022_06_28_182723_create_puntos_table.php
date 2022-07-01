@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('NameLocal');
             $table->Text('Description');
             $table->string('Longitud');
+            $table->string('imagen');
             $table->string('Latitud');
             $table->integer('Type');
             $table->string('User');
